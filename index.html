@@ -50,6 +50,17 @@
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-class="invert" class="invert" style="--class:invert;">
+<h1>What is Deno</h1>
+<h2>A code example</h2>
+<pre><code class="language-typescript"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">import</span> { serve } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;https://deno.land/std@0.71.0/http/server.ts&quot;</span>;
+<span class="hljs-keyword">const</span> s = serve({ port: <span class="hljs-number">8000</span> });
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;http://localhost:8000/&quot;</span>);
+<span class="hljs-keyword">for</span> <span class="hljs-keyword">await</span> (<span class="hljs-keyword">const</span> req <span class="hljs-keyword">of</span> s) {
+  req.respond({ body: <span class="hljs-string">&quot;Hello World\n&quot;</span> });
+}
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-class="invert" class="invert" style="--class:invert;">
 <h1>Pros and Cons of Deno</h1>
 <p><img src="images/through.png" alt="height:180px" title="Throughput" style="height:180px;" /><br />
 <img src="images/latency.png" alt="height:180px" title="Latency" style="height:180px;" /></p>
@@ -57,12 +68,12 @@
 <li>Performance... differences</li>
 <li>Less modules (11 years of Node modules vs. ~ a year of Deno modules)
 <ul>
-<li>no Nest, Rx, AWS library (I'm guessing no FB library either)</li>
+<li>no Nest, RxJS, AWS library (I'm guessing no FB library either)</li>
 </ul>
 </li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-class="invert" class="invert" style="--class:invert;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-class="invert" class="invert" style="--class:invert;">
 <h1>Production Ready</h1>
 <ul>
 <li>Why or why not?</li>

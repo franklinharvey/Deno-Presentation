@@ -42,6 +42,21 @@ Explained best in [10 Things I Regret About Node.js](https://www.youtube.com/wat
 
 ---
 
+# What is Deno
+
+## A code example
+
+```typescript
+import { serve } from "https://deno.land/std@0.71.0/http/server.ts";
+const s = serve({ port: 8000 });
+console.log("http://localhost:8000/");
+for await (const req of s) {
+  req.respond({ body: "Hello World\n" });
+}
+```
+
+---
+
 # Pros and Cons of Deno
 
 ![height:180px](images/through.png "Throughput")
@@ -49,7 +64,7 @@ Explained best in [10 Things I Regret About Node.js](https://www.youtube.com/wat
 
 - Performance... differences
 - Less modules (11 years of Node modules vs. ~ a year of Deno modules)
-  - no Nest, Rx, AWS library (I'm guessing no FB library either)
+  - no Nest, RxJS, AWS library (I'm guessing no FB library either)
 
 ---
 
