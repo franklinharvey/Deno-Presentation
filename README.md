@@ -1,5 +1,3 @@
-<!-- class: invert -->
-
 # Deno-Presentation
 
 ## By Franklin Harvey
@@ -22,7 +20,7 @@
 
 - Secure by default. No file, network, or environment access, unless explicitly enabled.
 - Supports TypeScript out of the box.
-- Has a set of reviewed (audited) standard modules that are guaranteed to work with Deno: deno.land/std
+- Has a set of reviewed (audited) standard modules that are guaranteed to work with Deno: [deno.land/std](deno.land/std)
 
 ---
 
@@ -59,12 +57,12 @@ for await (const req of s) {
 
 # Pros and Cons of Deno
 
-![height:180px](images/through.png "Throughput")
-![height:180px](images/latency.png "Latency")
+![height:240px](images/through.png "Throughput")
+![height:240px](images/latency.png "Latency")
 
 - Performance... differences
 - Less modules (11 years of Node modules vs. ~ a year of Deno modules)
-  - no Nest, RxJS, AWS library (I'm guessing no FB library either)
+  - no Nest, RxJS, AWS library
 
 ---
 
